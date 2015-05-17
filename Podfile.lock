@@ -1,0 +1,13 @@
+PODS:
+  - EKKeyboardAvoiding (2.0)
+  - IHKeyboardAvoiding (2.2)
+
+DEPENDENCIES:
+  - EKKeyboardAvoiding
+  - IHKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  EKKeyboardAvoiding: 15ed09e96eb97594991665316eef43340936bf74
+  IHKeyboardAvoiding: c48e2aa88064f502ff3ba135d4b1998c175c6dfe
+
+COCOAPODS: 0.36.3
