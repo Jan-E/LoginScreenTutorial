@@ -180,6 +180,7 @@
 				EAF799C0186BE0910050F239 /* Frameworks */,
 				EAF799C1186BE0910050F239 /* Resources */,
 				986770C5AE47FB6B4AEC3471 /* Copy Pods Resources */,
+				C02B6D31F7C0EBC5D77FB75B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,7 +215,7 @@
 		EAF799BB186BE0910050F239 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Dipin Krishna";
 				TargetAttributes = {
 					EAF799E3186BE0910050F239 = {
@@ -291,6 +292,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C02B6D31F7C0EBC5D77FB75B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,6 +386,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -431,8 +448,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginScreenTutorial/LoginScreenTutorial-Prefix.pch";
 				INFOPLIST_FILE = "LoginScreenTutorial/LoginScreenTutorial-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolsforresearc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,8 +464,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginScreenTutorial/LoginScreenTutorial-Prefix.pch";
 				INFOPLIST_FILE = "LoginScreenTutorial/LoginScreenTutorial-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolsforresearc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -468,6 +487,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "LoginScreenTutorialTests/LoginScreenTutorialTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolsforeresearch.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -486,6 +506,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginScreenTutorial/LoginScreenTutorial-Prefix.pch";
 				INFOPLIST_FILE = "LoginScreenTutorialTests/LoginScreenTutorialTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolsforeresearch.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
